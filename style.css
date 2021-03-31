@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* Resetear */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Contenido centrado a nivel de pantalla */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+body {
+  background: #5d5de2;
+}
+
+/* Animación circle1 */
+.circle {
+  width: 200px;
+  height: 200px;
+  background: red;
+  border-radius: 50%;
+  border: 5px solid black;
+}
+
+.circle:first-child {
+  -webkit-animation: circle1 2s infinite alternate;
+          animation: circle1 2s infinite alternate;
+}
+
+@-webkit-keyframes circle1 {
+  to {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@keyframes circle1 {
+  to {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.circle:nth-child(2) {
+  -webkit-animation: circle2 2s infinite alternate;
+          animation: circle2 2s infinite alternate;
+  background: green;
+}
+
+@-webkit-keyframes circle2 {
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@keyframes circle2 {
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,47 @@
+/* Resetear */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenido centrado a nivel de pantalla */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+body {
+    background: #5d5de2;
+}
+/* Animación circle1 */
+.circle {
+    width: 200px;
+    height:200px;
+    background: red;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.circle:first-child {
+    animation: circle1 2s infinite alternate;
+    @keyframes circle1 {
+        to {
+            width: 400px;
+            height: 400px
+        }
+    }
+}
+
+.circle:nth-child(2) {
+    animation: circle2 2s infinite alternate;
+    background: green;
+    @keyframes circle2 {
+        to {
+            transform: scale(1.5);
+        }
+    }
+}
